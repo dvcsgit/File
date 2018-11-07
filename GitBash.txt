@@ -1,0 +1,105 @@
+git help git
+git help <command>
+
+git config --global user.name "dvcsgit"
+git config --global user.email "---"
+
+cd e:
+cd GitRepositary
+mkdir repositaryfile
+cd repositary
+pwd
+
+////////////////////////////
+cd e:/GitRepository/File
+
+git init
+
+git add readme.txt
+git commit -m "Commit readme.txt"
+git status
+
+/////////////////Look
+cat readme.txt
+
+git diff readme.txt //Check difference
+
+//Check log
+git log
+git log --graph --pretty=oneline --abbrev-commit
+
+///////////Reset version
+<1>git reset --hard HEAD^
+   git reset --hard HEAD^^
+   git reset --hard HEAD~100
+
+<2>git reflog //Check version nomber
+   git reset --hard 6fcfc89
+
+/////////////Undo changes
+git checkout -- readme.txt
+/////////////Remove file
+rm readme.txt
+//If you want to restore this file
+git checkout -- readme.txt
+git commit
+//If you want to completely remove this file
+git commit
+
+//////////////Git SSH Key
+ssh-keygen -t rsa -C "emailaddress"
+
+////////////Connect to remote warehouse with a local warehouse
+git remote add origin https://github.com/dvcsgit/repositoryfile.git
+git push -u origin master
+
+////////Push local master changes
+git push origin master
+
+////////////Clone remote warehouse to local
+git clone https://github.com/dvcsgit/repositoryfile
+
+//////////////////Create and marge branchs
+git checkout -b dev //Create branch
+
+//Or
+git branch dev
+git checkout dev
+
+//Look branchs
+git branch
+
+//Change to master branch
+git checkout master
+
+//Merge dev to current branch
+git merge dev
+
+git merge --no-ff -m "Merge with no-ff" dev
+
+//Delete dev
+git branch -d dev
+
+//Bug branch
+
+//Hide current branch
+git stash
+//Return to current branch
+git checkout dev
+git status
+git stash list
+git stash apply
+git stash drop
+//All
+git stash pop
+
+//////////Look remote warehouse
+git remote
+git remote -v
+
+///////////More people development
+git branch --set-upstream dev origin/dev
+git pull
+
+git push origin dev
+
