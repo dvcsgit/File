@@ -103,3 +103,9 @@ git pull
 
 git push origin dev
 
+////////////////////////////////////////////////////////////////////////
+vim edit model:㏑家Α ?家Α ソ︽家Α
+o?玡︽よ穝?︽ち?础家Α
+Esc:?玡㏑┪㏑家Α
+:wq or :x 玂Τэ崩
+
