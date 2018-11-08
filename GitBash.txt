@@ -103,6 +103,11 @@ git pull
 
 git push origin dev
 
+//////////////////////////
+git add -A . //And all.
+git add .    //And new and edited files expect deleted files.
+git add -u   //And edited and deleted files expect new files.
+
 ////////////////////////////////////////////////////////////////////////
 vim edit model:㏑家Α ?家Α ソ︽家Α
 o?玡︽よ穝?︽ち?础家Α
