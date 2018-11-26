@@ -5,9 +5,9 @@ git config --global user.name "dvcsgit"
 git config --global user.email "---"
 
 cd e:
-cd GitRepositary
-mkdir repositaryfile
-cd repositary
+cd GitRepository
+mkdir repositoryfile
+cd repository
 pwd
 
 ////////////////////////////
@@ -52,6 +52,9 @@ ssh-keygen -t rsa -C "emailaddress"
 ////////////Connect to remote warehouse with a local warehouse
 git remote add origin https://github.com/dvcsgit/repositoryfile.git
 git push -u origin master
+
+////////////////////////////
+git remote rm origin
 
 ////////Push local master changes
 git push origin master
@@ -107,6 +110,11 @@ git push origin dev
 git add -A . //And all.
 git add .    //And new and edited files expect deleted files.
 git add -u   //And edited and deleted files expect new files.
+
+//////////////////////////
+git add .
+git commit -m ""
+git push origin master
 
 ////////////////////////////////////////////////////////////////////////
 vim edit model:命令模式 ?入模式 末行模式
