@@ -122,3 +122,33 @@ o在?前行的下方新?一行，并切?至插入模式
 Esc:取消?前命令或返回命令模式
 :wq or :x 保存已有修改并推出
 
+/////////////////////////////////////////////
+Android Studio Configure Git
+
+Ctrl+Alt+S => Settings =>Version Control =>Git
+                                                                       =>GitHub
+
+//Configure an existing repository
+VCS=>Import into version control=>Share Project on GitHub
+
+//本地修改同步到?程??
+Alt+9=>Version Control=>Right click Unversioned Files=>Git=>Add
+Right click Default=>Commit
+Ctrl+Shift+k or right click root directory of project=>push
+
+master
+dev
+feature branch
+notfix branch
+release branch
+
+git branch feature-1=>git checkout feature-1=>Changes=>git commit -m ""=>git checkout dev=>git merge feature-1=>git branch -d feature-1
+
+//Git revert
+Log=>Copy Revision Number=>Open Terminal=>git revert "The revision number"=>:q
+
+//Git reset
+VCS=>Git=>Reset HEAD=>To Commit=>HEAD~3
+
+//Rebase
+VCS=>Git=>Rebase=>Onto=>dev=>Start Rebasing
