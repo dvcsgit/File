@@ -1,0 +1,14 @@
+netsh wlan set hostednetwork mode=allow ssid=wifi key=12345678
+netsh wlan start hostednetwork
+pause
+
+netsh wlan stop hostednetwork
+netsh wlan set hostednetwork mode=disallow
+pause
+
+net stop wlansvc
+Get-ItemProperty "HKLM:\system\currentcontrolset\services\wlansvc\parameters\hostednetworksettings"
+Remove-Item "HKLM:\system\currentcontrolset\services\wlansvc\parameters\hostednetworksettings"
+net start wlansvc
+
+

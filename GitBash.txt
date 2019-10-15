@@ -1,9 +1,15 @@
 git help git
 git help <command>
 
+1----------------------------------------------------
 git config --global user.name "dvcsgit"
 git config --global user.email "---"
 
+//Look information
+git config user.name
+git config user.email
+
+2----------------------------------------------------
 cd e:
 cd GitRepository
 mkdir repositoryfile
@@ -13,6 +19,13 @@ pwd
 ////////////////////////////
 cd e:/GitRepository/File
 
+////when you use window console
+>e:
+>cd e:\GitRepository\File
+////////or
+>cd "c:\Program Files"
+
+3----------------------------------------------------
 git init
 
 git add readme.txt
@@ -152,3 +165,6 @@ VCS=>Git=>Reset HEAD=>To Commit=>HEAD~3
 
 //Rebase
 VCS=>Git=>Rebase=>Onto=>dev=>Start Rebasing
+
+//使用git clone命令clone?目?，如果repository的SSH端口不是?准22端口
+git clone ssh://git@hostname:port/.../xxx.git
